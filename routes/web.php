@@ -5,6 +5,7 @@ use App\Http\Controllers\ConsoleController;
 use App\Http\Controllers\ProjectsController;
 use App\Http\Controllers\TypesController;
 use App\Http\Controllers\UsersController;
+use App\Http\Controllers\EducationController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -57,3 +58,10 @@ Route::post('/console/types/add', [TypesController::class, 'add'])->middleware('
 Route::get('/console/types/edit/{type:id}', [TypesController::class, 'editForm'])->where('type', '[0-9]+')->middleware('auth');
 Route::post('/console/types/edit/{type:id}', [TypesController::class, 'edit'])->where('type', '[0-9]+')->middleware('auth');
 Route::get('/console/types/delete/{type:id}', [TypesController::class, 'delete'])->where('type', '[0-9]+')->middleware('auth');
+
+Route::get('/console/education/list', [EducationController::class, 'list'])->middleware('auth');
+Route::get('/console/education/add', [EducationController::class, 'addForm'])->middleware('auth');
+Route::post('/console/education/add', [EducationController::class, 'add'])->middleware('auth');
+Route::get('/console/education/edit/{education:id}', [EducationController::class, 'editForm'])->where('education', '[0-9]+')->middleware('auth');
+Route::post('/console/education/edit/{education:id}', [EducationController::class, 'edit'])->where('education', '[0-9]+')->middleware('auth');
+Route::get('/console/education/delete/{education:id}', [EducationController::class, 'delete'])->where('education', '[0-9]+')->middleware('auth');
