@@ -70,4 +70,11 @@ class EducationController extends Controller
             ->with('message', 'Education has been edited!');
     }
 
+    public function delete(Education $education)
+    {
+        $education->delete();
+        
+        return redirect('/console/education/list')
+            ->with('message', 'Education has been deleted!');        
+    }
 }
