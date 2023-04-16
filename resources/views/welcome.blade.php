@@ -53,7 +53,7 @@
                 <p>
                     Posted: {{$project->created_at->format('M j, Y')}}
                     <br>
-                    Type: {{$project->type->title}}
+                
                 </p>
 
                 <a href="/project/{{$project->slug}}" class="w3-button w3-green">View Project Details</a>
