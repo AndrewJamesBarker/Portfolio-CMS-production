@@ -3,7 +3,9 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-use App\Models\Type;
+use App\Models\Skill;
+use App\Models\Education;
+use App\Models\Employment;
 use App\Models\User;
 use App\Models\Project;
 
@@ -29,6 +31,38 @@ Route::get('/types', function(){
 
 });
 
+Route::get('/education', function(){
+
+    $education = Education::orderBy('title')->get();
+    return $education;
+
+});
+
+Route::get('/employment', function(){
+
+    $education = Employment::orderBy('title')->get();
+    return $education;
+
+});
+
+
+Route::get('/skills', function(){
+
+    $skills = Skill::orderBy('name')->get();
+
+    foreach($skills as $key => $skill)
+    {
+        $skills[$key]['projects'] = $skill->projects;
+
+        if($skill['image'])
+        {
+            $skills[$key]['image'] = env('APP_URL').'storage/'.$skill['image'];
+        }
+    }
+    return $skills;
+
+});
+
 Route::get('/projects', function(){
 
     $projects = Project::orderBy('created_at')->get();
@@ -36,7 +70,7 @@ Route::get('/projects', function(){
     foreach($projects as $key => $project)
     {
         $projects[$key]['user'] = User::where('id', $project['user_id'])->first();
-        $projects[$key]['type'] = Type::where('id', $project['type_id'])->first();
+        $projects[$key]['skills'] = $project->skills;
 
         if($project['image'])
         {
