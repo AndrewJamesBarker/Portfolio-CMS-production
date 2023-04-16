@@ -10,9 +10,10 @@
         <tr class="w3-red">
             <th></th>
             <th>Title</th>
-            <th>Slug</th>
-            <th>Type</th>
+            <th>Url</th>
             <th>Created</th>
+            <th>Skills</th>
+         
             <th></th>
             <th></th>
             <th></th>
@@ -26,12 +27,16 @@
                 </td>
                 <td>{{$project->title}}</td>
                 <td>
-                    <a href="/project/{{$project->slug}}">
-                        {{$project->slug}}
+                    <a href="/project/{{$project->url}}">
+                        {{$project->url}}
                     </a>
                 </td>
-                <td>{{$project->type->title}}</td>
                 <td>{{$project->created_at->format('M j, Y')}}</td>
+                <td><ul>
+                @foreach($project->skills as $skill)
+                    <li>{{$skill->name}}</li>
+                @endforeach
+                </ul></td>
                 <td><a href="/console/projects/image/{{$project->id}}">Image</a></td>
                 <td><a href="/console/projects/edit/{{$project->id}}">Edit</a></td>
                 <td><a href="/console/projects/delete/{{$project->id}}">Delete</a></td>
