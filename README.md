@@ -121,7 +121,6 @@ To set up this CMS follow these steps:
     ```
     php artisan key:generate
     ```
-
 ## Test
 
 To view the public front end go to http://localhost:8888/ on a Mac or http://localhost/ on a Windows machine. This may be different based on your MAMP configuration. 
