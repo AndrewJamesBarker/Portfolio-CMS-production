@@ -28,7 +28,7 @@
 
 <footer class="w3-padding">
 
-    Footer Text | 
+     
     Copyright {{date('Y')}}
     <a href="https://www.linkedin.com/in/andrew-james-barker-/">Linkedin</a> | 
     <a href="https://www.instagram.com/mus.art.barks/">Instagram</a>
