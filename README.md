@@ -142,4 +142,4 @@ Full tutorial URL: https://codeadam.ca/learning/php-cms-laravel.html
 <img src="https://codeadam.ca/images/code-block.png" width="100">
 </a>
 
-* testing branch push
+* testing branch push, project name confirm test.
