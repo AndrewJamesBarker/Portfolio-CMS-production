@@ -28,7 +28,7 @@ class EmploymentController extends Controller
             'url' => 'nullable|url',
             'content' => 'required',
             'started_at' => 'required',
-            'ended_at' => 'required',
+            'ended_at' => 'nullable',
         
         ]);
 
@@ -61,7 +61,7 @@ class EmploymentController extends Controller
             'url' => 'nullable|url',
             'content' => 'required',
             'started_at' => 'required',
-            'ended_at' => 'required',
+            'ended_at' => 'nullable',
        
         ]);
 
