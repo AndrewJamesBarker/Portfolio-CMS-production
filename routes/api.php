@@ -40,8 +40,8 @@ Route::get('/education', function(){
 
 Route::get('/employment', function(){
 
-    $education = Employment::orderBy('title')->get();
-    return $education;
+    $employment = Employment::orderBy('title')->get();
+    return $employment;
 
 });
 
