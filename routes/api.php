@@ -40,7 +40,7 @@ Route::get('/education', function(){
 
 Route::get('/employment', function(){
 
-    $employment = Employment::orderBy('title')->get();
+    $employment = Employment::orderBy('ended_at', 'desc')->get();
     return $employment;
 
 });
