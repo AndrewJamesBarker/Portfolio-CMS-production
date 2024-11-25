@@ -7,10 +7,8 @@
     <h2 class="w3-text-blue">About Me</h2>
 
     <p>
-    I'm a Junior Full Stack Developer who combines an eye for front-end design with a talent for problem-solving.
-I'm passionate about creating user-friendly, intuitive, visually appealing web applications. I'm also experienced in developing back-end systems and databases, and I'm comfortable working with various programming languages and frameworks. I'm always looking for ways to improve my skills and stay up-to-date with the latest technologies. I'm a team player who enjoys collaborating to create innovative solutions.
-In addition to my technical background, I have a passion for music. I'm an experienced musician and have played guitar for over 30 years. I'm also knowledgeable in music production and recording and always looking for ways to combine my technical and musical skills.
-
+    I'm a Full Stack Developer with a sharp eye for front-end design and a knack for solving complex problems. My experience includes working with companies that rely on Drupal and React to build dynamic, user-centric web applications. I thrive on creating solutions that are not only functional but also intuitive and visually engaging.
+    I'm passionate about creating user-friendly, intuitive, visually appealing web applications. I'm also experienced in developing back-end systems and databases, and I'm comfortable working with various programming languages and frameworks. I'm always looking for ways to improve my skills and stay up-to-date with the latest technologies. I'm a team player who enjoys collaborating to create innovative solutions.
     </p>
 
 </section>
